@@ -1,26 +1,36 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NotificationController;
+use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\HomeController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
-Route::get('/', function () {
-    return view('auth.login');
+// Inicio y envio de notificación
+
+Route::get('/', [HomeController::class, 'Types']);
+
+Route::get('/nueva-categoria', function () {
+    return view('AddCategories');
+});
+Route::get('/nueva-notificacion', function () {
+    return view('AddNotifications');
 });
 
+Route::post('/send-notification', [NotificationController::class, 'send']);
+Route::post('/add-category', [CategoriesController::class, 'add']);
+Route::post('/add-notification', [NotificationController::class, 'add']);
+
+
+// Auth
+Route::get('/login', function () {
+    return view('auth.login');
+});
 Route::get('/register', function () {
     return view('auth.register');
 });
 
+// Usuarios
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
