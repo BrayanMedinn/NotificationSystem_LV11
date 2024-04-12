@@ -29,8 +29,8 @@
       </div>
       <!-- Nuevas categorias y notificaciones-->
       <div class="p-6 flex justify-between">
-      <a href="/nueva-notificacion">Nueva notificación</a>
-      <a href="/nueva-categoria">Agregar categoria</a>
+      <a class="inline-flex items-center px-2 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150" href="/nueva-notificacion">Nueva notificación</a>
+      <a class="inline-flex items-center px-2 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150" href="/nueva-categoria">Agregar categoria</a>
       </div>
       <!-- Mensaje -->
       <div class="mt-4">
