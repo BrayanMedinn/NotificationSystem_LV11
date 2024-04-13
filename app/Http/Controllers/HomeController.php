@@ -12,9 +12,11 @@ class HomeController extends Controller
     public function Types() {
             $category = Category::get_categories_subscription();
             $notification = Notification::get_notifications_types();
+            $notifications_history = Notification::get_notifications();
             return view('index', [
                 'category' => $category,
-                'notification' => $notification
+                'notification' => $notification,
+                'history' => $notifications_history
             ]);
         }
 }

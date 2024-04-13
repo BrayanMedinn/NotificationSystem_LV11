@@ -16,4 +16,13 @@ class Notification extends Model
         ->select('name', 'id')
         ->get();
     }
+
+    public static function get_notifications () {
+        return DB::table('notifications')
+        ->join('categories_subscription', 'notifications.subscription_category_id', '=', 'categories_subscription.id')
+        ->select(
+            'notifications.id','notifications.subscription_category_id','notifications.notification_type_id',
+            'notifications.message', 'notifications.created_at', 'categories_subscription.name as categoryName')
+        ->get();
+    }
 }
