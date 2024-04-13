@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DashboardController;
 
 
 // Inicio y envio de notificación
@@ -31,8 +32,6 @@ Route::get('/register', function () {
 });
 
 // Usuarios
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/dashboard',  [DashboardController::class, 'dashboard_data'])->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
