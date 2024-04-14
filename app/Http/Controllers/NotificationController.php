@@ -5,11 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use DB;
+use App\Models\Subscription;
+use Illuminate\Support\Facades\Auth;
 
 class NotificationController extends Controller
 {
     public function send (Request $request) {
-        // Validamos los campos del formulario
         $request->validate([
             'notificacion' => 'numeric',
             'categoria' => 'numeric',
@@ -18,15 +19,13 @@ class NotificationController extends Controller
 
         $date = Carbon::now()->format('Y-m-d H:i:s');
 
-        // dd($request->all());
-
         DB::table('notifications')->insert([
           'subscription_category_id' => $request->categoria,
           'notification_type_id' => $request->notificacion,
           'message' => $request->mensaje,
           'created_at' => $date
         ]);
-
+        return redirect('/');
     }
 
     public function add(Request $request) {

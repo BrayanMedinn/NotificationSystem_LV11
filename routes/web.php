@@ -5,6 +5,7 @@ use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\SubscriptionController;
 
 
 // Inicio y envio de notificación
@@ -33,5 +34,7 @@ Route::get('/register', function () {
 
 // Usuarios
 Route::get('/dashboard',  [DashboardController::class, 'dashboard_data'])->middleware(['auth'])->name('dashboard');
+Route::get('/navigation',  [DashboardController::class, 'dashboard_notification']);
+Route::post('/subscribe', [SubscriptionController::class, 'newSubscription']);
 
 require __DIR__.'/auth.php';

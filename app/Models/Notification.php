@@ -25,4 +25,11 @@ class Notification extends Model
             'notifications.message', 'notifications.created_at', 'categories_subscription.name as categoryName')
         ->get();
     }
+
+    public static function categoryByName () {
+        return DB::table('notifications')
+        ->join('categories_subscription', 'notifications.subscription_category_id', '=', 'categories_subscription.id')
+        ->select('categories_subscription.id', 'categories_subscription.name as categoryName')
+        ->get();
+    }
 }
