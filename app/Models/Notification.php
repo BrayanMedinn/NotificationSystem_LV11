@@ -23,6 +23,7 @@ class Notification extends Model
         ->select(
             'notifications.id','notifications.subscription_category_id','notifications.notification_type_id',
             'notifications.message', 'notifications.created_at', 'categories_subscription.name as categoryName')
+        ->orderBy('notifications.created_at', 'desc')
         ->get();
     }
 
