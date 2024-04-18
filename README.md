@@ -1,5 +1,5 @@
 # Instalación
-Antes de correr en sitio hacer las mmigraciones y agregar la base de datos, el nombre de la base de datos lo pueden encontrar en el archivo .env
+Antes de correr en sitio hacer las migraciones y agregar la base de datos, el nombre de la base de datos lo pueden encontrar en el archivo .env
 
 ```bash
   php artisan migrate
@@ -14,7 +14,7 @@ Despues de hacer las migraciones y agregar la DB ya podemos iniciar el servidor 
 
 El sistema cuenta administración de usuarios con base de datos, al iniciar la vista principal tendras un panel de control de notificaciones general 
 
-![App Screenshot](readme/1.png)
+![App Screenshot](public/readme/1.png)
 
 
 ## Requisitos
