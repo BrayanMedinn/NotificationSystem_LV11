@@ -10,6 +10,11 @@
             Log in
          </a>
       </div>
+      <div style="position: fixed; top: 20px; right: 6rem;">
+         <a href="/register" style="background-color: #333; color: #fff; padding: 10px; border-radius: 5px; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+            Register
+         </a>
+      </div>
    <form method="POST" action="/send-notification">
       @csrf
       <!-- Tipo de mensaje -->

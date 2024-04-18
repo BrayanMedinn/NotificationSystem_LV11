@@ -1,5 +1,23 @@
-# Notification Test
+# Instalación
+Antes de correr en sitio hacer las mmigraciones y agregar la base de datos, el nombre de la base de datos lo pueden encontrar en el archivo .env
 
+```bash
+  php artisan migrate
+```
+
+Despues de hacer las migraciones y agregar la DB ya podemos iniciar el servidor sin ningun problema
+
+```bash
+  php artisan serve
+```
+## Funcionamiento
+
+El sistema cuenta administración de usuarios con base de datos, al iniciar la vista principal tendras un panel de control de notificaciones general 
+
+![App Screenshot](readme/1.png)
+
+
+## Requisitos
 Se requiere crear un sistema de notificaciones, capaz de recibir un mensaje y dependiendo de la categoria del mensaje y de los usuarios suscritos a estos, se notificara al medio que ellos eligieron.
 
 Se manejaran 3 categorias
