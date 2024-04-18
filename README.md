@@ -23,6 +23,22 @@ Antes de poder enviar una notificación deberas crear que tipo de notificación 
 Una vez que crees tus categorias y notificaciones podras enviarla a todos los usuarios que esten suscritos a esa categoria
 y tendras un registro de las notificaciones en la parte inferior derecha
 
+![App Screenshot](public/readme/3.png)
+
+Ya con la primera notificación creada si ya hay un usuario registrado iniciamos sesión o en caso contrario nos registramos
+
+![App Screenshot](public/readme/4.png)
+
+Esto nos mandara al dashboard del usuario con las categorias creadas anteriormente con la opcion de suscribirnos
+
+![App Screenshot](public/readme/5.png)
+
+Una ves que seleccionemos la categoria y me suscriba automaticamente se mostraran las notificaciones del usuario en la parte inferior derecha
+
+![App Screenshot](public/readme/6.png)
+
+De esta manera pueden crearce n numero de categorias y cada usuario puede o no estar suscrito a ella y recibir unicamente a la que esta suscrito 
+
 
 
 ## Requisitos
