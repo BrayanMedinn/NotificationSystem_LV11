@@ -1,5 +1,12 @@
 # Instalación
-Antes de correr en sitio hacer las migraciones y agregar la base de datos, el nombre de la base de datos es "prueba_tenica"
+Antes de correr en sitio debemos hacer las migraciones y agregar la base de datos aqui te dejo la configuración para el archivo de entorno :
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=prueba_tecnica
+    DB_USERNAME=root
+    DB_PASSWORD=
+despues de agregar todo correctamente corremos el comando:
 
 ```bash
   php artisan migrate
