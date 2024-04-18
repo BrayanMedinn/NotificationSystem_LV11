@@ -1,5 +1,5 @@
 # Instalación
-Antes de correr en sitio hacer las migraciones y agregar la base de datos, el nombre de la base de datos lo pueden encontrar en el archivo .env
+Antes de correr en sitio hacer las migraciones y agregar la base de datos, el nombre de la base de datos es "prueba_tenica"
 
 ```bash
   php artisan migrate
