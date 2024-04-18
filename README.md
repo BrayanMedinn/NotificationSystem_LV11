@@ -16,6 +16,14 @@ El sistema cuenta administración de usuarios con base de datos, al iniciar la v
 
 ![App Screenshot](public/readme/1.png)
 
+Antes de poder enviar una notificación deberas crear que tipo de notificación deseas enviar y tambien crear de que  categoria
+
+![App Screenshot](public/readme/2.png)
+
+Una vez que crees tus categorias y notificaciones podras enviarla a todos los usuarios que esten suscritos a esa categoria
+y tendras un registro de las notificaciones en la parte inferior derecha
+
+
 
 ## Requisitos
 Se requiere crear un sistema de notificaciones, capaz de recibir un mensaje y dependiendo de la categoria del mensaje y de los usuarios suscritos a estos, se notificara al medio que ellos eligieron.
